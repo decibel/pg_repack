@@ -919,9 +919,10 @@ repack_swap(PG_FUNCTION_ARGS)
  * @fn      Datum repack_drop(PG_FUNCTION_ARGS)
  * @brief   Delete temporarily objects.
  *
- * repack_drop(oid, relname)
+ * repack_drop(oid, int)
  *
  * @param	oid		Oid of target table.
+ * @param       int             Number of objects to drop.
  * @retval			None.
  */
 Datum
